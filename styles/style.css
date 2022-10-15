@@ -10,7 +10,7 @@ body {
   font-family: "Roboto Mono", monospace;
   height: 100vh;
   overflow: hidden;
-  background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-07-super-trunfo-bg.png");
+  background-image: url("../imagens/pokeball_background.jpg");
   background-color: #000000;
   background-size: cover;
   background-position: center top;
