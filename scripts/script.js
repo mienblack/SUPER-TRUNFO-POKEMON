@@ -46,9 +46,6 @@ function sortearCarta() {
   }
   cartaJogador = cartas[indiceCartaJogador];
 
-  document.getElementById("btnSortear").disabled = true;
-  document.getElementById("btnJogar").disabled = false;
-
   exibirCartaJogador();
 }
 
@@ -94,6 +91,9 @@ function jogar() {
 
 //Mostra a carta que o jogador tem a tela
 function exibirCartaJogador() {
+  document.getElementById("btnSortear").disabled = true;
+  document.getElementById("btnJogar").disabled = false;
+
   var divCartaJogador = document.getElementById("carta-jogador");
   divCartaJogador.style.backgroundImage = `url(${cartaJogador.imagem})`;
   //divCartaJogador.style.backgroundImage"url(" + cartaJogador.imagem + ")"
