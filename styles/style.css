@@ -10,7 +10,7 @@ body {
   font-family: "Roboto Mono", monospace;
   height: 100vh;
   overflow: hidden;
-  background-image: url("../imagens/pokeball_background.jpg");
+  background-image: url("../images/pokeball_background.jpg");
   background-color: #000000;
   background-size: cover;
   background-position: center top;
@@ -55,7 +55,7 @@ h2 {
 #carta-jogador,
 #carta-maquina {
   width: 360px;
-  height: 500px;
+  height: 600px;
   overflow: auto;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -86,7 +86,10 @@ h2 {
 }
 
 .carta-status {
+  font-size: 10pt;
+  font-weight: bold;
   position: absolute;
+  text-align: left;
   bottom: 10%;
   left: 10%;
   color: white;
@@ -94,7 +97,7 @@ h2 {
 }
 
 .carta-status input {
-  margin: 15px 10px;
+  margin: 7px 10px;
 }
 
 .--spacing {
@@ -128,7 +131,7 @@ form {
 }
 
 .carta-status p {
-  margin: 15px 10px;
+  margin: 10px 10px;
 }
 
 #divResultado {

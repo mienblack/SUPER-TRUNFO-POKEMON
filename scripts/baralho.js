@@ -11,27 +11,32 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore()
 const baralho = db.collection("baralho");
+const cards = []
 
+baralho.get().then((snapshot) => {
+    snapshot.forEach((card) => {
+        cards.push(card.data())
+    })
+})
 
+export default cards
+
+/*
 baralho.add({
-    nome: "beedril",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/015.png",
-    tipo: ["inseto", "veneno"],
+    nome: "raichu",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/026.png",
+    tipo: ["elétrico"],
     atributos: {
                 HP: 4,
                 ataque: 6,
                 ataqueSP: 6,
-                defesa: 3,
-                defesaSP: 5,
-                velocidade: 3
+                defesa: 4,
+                defesaSP: 4,
+                velocidade: 7
                 }
-}).then(() => {
-    baralho.doc(this.id).get().then((snapshot) => {
-        snapshot.forEach((doc) => {
-            let pok = doc.data()
-            console.log(pok.nome)
-        })
-    })
+}).then((pok) => {
+        console.log(pok)
 }).catch((err) => {
     console.log(err)
 })
+*/
