@@ -63,9 +63,9 @@ h2 {
   display: flex;
   align-items: flex-end;
   position: relative;
-  background-size: 230px 230px;
+  background-size: 275px 275px;
   background-repeat: no-repeat;
-  background-position-y: top 20%;
+  background-position-y: 20%;
   background-position-x: center;
   border-radius: 33px;
 }

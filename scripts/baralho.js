@@ -20,19 +20,18 @@ baralho.get().then((snapshot) => {
 })
 
 export default cards
-
 /*
 baralho.add({
-    nome: "raichu",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/026.png",
-    tipo: ["elétrico"],
+    nome: "mew",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/151.png",
+    tipo: ["psiquico"],
     atributos: {
-                HP: 4,
+                HP: 6,
                 ataque: 6,
+                defesa: 6,
                 ataqueSP: 6,
-                defesa: 4,
-                defesaSP: 4,
-                velocidade: 7
+                defesaSP: 6,
+                velocidade: 6
                 }
 }).then((pok) => {
         console.log(pok)
